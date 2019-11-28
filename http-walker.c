@@ -172,7 +172,7 @@ static void prefetch(struct walker *walker, unsigned char *sha1)
 static int is_alternate_allowed(const char *url)
 {
 	const char *protocols[] = {
-		"http", "https", "ftp", "ftps"
+	    "http", "https", "ftp", "ftps", "sftp"
 	};
 	int i;
 

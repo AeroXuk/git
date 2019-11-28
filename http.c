@@ -788,6 +788,8 @@ static long get_curl_allowed_protocols(int from_user)
 		allowed_protocols |= CURLPROTO_FTP;
 	if (is_transport_allowed("ftps", from_user))
 		allowed_protocols |= CURLPROTO_FTPS;
+	if (is_transport_allowed("sftp", from_user))
+		allowed_protocols |= CURLPROTO_SFTP;
 
 	return allowed_protocols;
 }
